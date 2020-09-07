@@ -25,6 +25,10 @@ class Navigation extends React.Component {
                 <a id="github-logo" href="https://github.com/reganiu" target="blank">
                     <i class="fab fa-github-square"></i>
                 </a>
+
+                <a id="email" href="mailto:regan.iu@outlook.com" target="blank">
+                    <i class="fas fa-envelope"></i>
+                </a>
             </Nav>
             </Navbar>
         </div>
