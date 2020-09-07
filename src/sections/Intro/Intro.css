@@ -1,13 +1,12 @@
-.jumbotron-fluid {
+#jumbotronIntro {
     height: 100vh;
     background-image: url("../../resources/background/leaf-bg.jpg");
     background-size: cover;
-    
-    
+
 }
 
 .intro {
-    padding: 400px 0; 
+    padding: 370px; 
     text-align: center;
     color: rgb(187, 187, 187);
     
