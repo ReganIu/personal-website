@@ -1,0 +1,8 @@
+#jumbotronAbout h1{
+    background-color: grey;
+    height: 100vh;
+    color: whitesmoke;
+    font-size: 100px;
+    font-weight: bold;
+    padding: 50px;
+}
