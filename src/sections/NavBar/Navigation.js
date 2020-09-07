@@ -9,10 +9,11 @@ class Navigation extends React.Component {
         return(
             <div>
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-            <Navbar.Brand href="#home">Regan Iu</Navbar.Brand>
-            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+            <Navbar.Brand href="#Intro">Regan Iu</Navbar.Brand>
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+
             <Nav className="mr-auto">
-                <Nav.Link href="#home">Home</Nav.Link>
+                <Nav.Link href="#" activeClass="active">Home</Nav.Link>
                 <Nav.Link href="#about">About</Nav.Link>
                 <Nav.Link href="#projects">Projects</Nav.Link>
                 <Nav.Link href="#contact">Contact</Nav.Link>
@@ -26,7 +27,7 @@ class Navigation extends React.Component {
                     <i class="fab fa-github-square"></i>
                 </a>
 
-                <a id="email" href="mailto:regan.iu@outlook.com" target="blank">
+                <a id="email-logo" href="mailto:regan.iu@outlook.com" target="blank">
                     <i class="fas fa-envelope"></i>
                 </a>
             </Nav>
