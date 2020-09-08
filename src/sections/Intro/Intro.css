@@ -5,15 +5,16 @@
 
 }
 
-.intro {
-    padding: 370px; 
+.intro-text {
+    padding: 350px 0;
     text-align: center;
     color: rgb(187, 187, 187);
+    font-weight: 800;
     
 }
 
 #name {
-    font-size: 150px;
+    font-size: 500%;
     opacity: 0.0;
     animation: fadeIn ease 5s;
     -webkit-animation: fadeIn ease 5s;
