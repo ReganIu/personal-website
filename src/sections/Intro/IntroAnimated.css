@@ -1,11 +1,11 @@
 #jumbotronIntro {
   height: 100vh;
-  background-image: url("../../resources/background/leaf-bg.jpg");
+  background-image: url("../../resources/background/background-pic.jpg");
   background-size: cover;
 
 }
 #name {
-  color: #fff;
+  color: white;
   height: 900px;
   font-weight: 700;
   overflow: hidden;
@@ -18,7 +18,7 @@
   /* -webkit-background-clip: text; */
   background-clip: text;
   font-size: 7vw;
-  font-family: Lato, sans-serif;
+  font-family: Merriweather, sans-serif;
   animation: reveal 3000ms ease-in-out forwards 500ms,
              glow 1000ms linear infinite 3500ms;
 }
