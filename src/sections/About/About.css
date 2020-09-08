@@ -1,8 +1,25 @@
+#aboutSection {
+    height: 100vh;
+    background-color: grey;
+}
+
 #jumbotronAbout h1{
     background-color: grey;
-    height: 100vh;
+    height: 30vh;
     color: whitesmoke;
     font-size: 100px;
-    font-weight: bold;
     padding: 50px;
+}
+
+#me-photo {
+    border-radius: 70px;
+    max-width: 70%;
+    height: auto;
+    margin: auto;
+}
+
+#me-text{
+    font-family: Roboto;
+    color: lightcyan;
+    font-size: 200%;
 }
