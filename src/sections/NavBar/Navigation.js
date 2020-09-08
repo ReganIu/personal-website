@@ -11,26 +11,28 @@ class Navigation extends React.Component {
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
             <Navbar.Brand href="#Intro">Regan Iu</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            
+            <Navbar.Collapse id="basic-navbar-nav">
+                <Nav className="mr-auto">
+                    <Nav.Link href="#" activeClass="active">Home</Nav.Link>
+                    <Nav.Link href="#about">About</Nav.Link>
+                    <Nav.Link href="#projects">Projects</Nav.Link>
+                    <Nav.Link href="#contact">Contact</Nav.Link>
+                </Nav>
+                <Nav>
+                    <a id="linkedin-logo" href="https://www.linkedin.com/in/reganiu/" target ="blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    
+                    <a id="github-logo" href="https://github.com/reganiu" target="blank">
+                        <i class="fab fa-github-square"></i>
+                    </a>
 
-            <Nav className="mr-auto">
-                <Nav.Link href="#" activeClass="active">Home</Nav.Link>
-                <Nav.Link href="#about">About</Nav.Link>
-                <Nav.Link href="#projects">Projects</Nav.Link>
-                <Nav.Link href="#contact">Contact</Nav.Link>
-            </Nav>
-            <Nav>
-                <a id="linkedin-logo" href="https://www.linkedin.com/in/reganiu/" target ="blank">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                
-                <a id="github-logo" href="https://github.com/reganiu" target="blank">
-                    <i class="fab fa-github-square"></i>
-                </a>
-
-                <a id="email-logo" href="mailto:regan.iu@outlook.com" target="blank">
-                    <i class="fas fa-envelope"></i>
-                </a>
-            </Nav>
+                    <a id="email-logo" href="mailto:regan.iu@outlook.com" target="blank">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </Nav>
+            </Navbar.Collapse>
             </Navbar>
         </div>
         )
