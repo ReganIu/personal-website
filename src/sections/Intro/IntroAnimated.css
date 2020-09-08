@@ -1,0 +1,38 @@
+#jumbotronIntro {
+  height: 100vh;
+  background-image: url("../../resources/background/leaf-bg.jpg");
+  background-size: cover;
+
+}
+#name {
+  color: #fff;
+  height: 900px;
+  font-weight: 700;
+  overflow: hidden;
+  background-color: #333641;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: 50% 100% / 50% 50% no-repeat
+  radial-gradient(ellipse at bottom, #fff, transparent, transparent);
+  /* -webkit-background-clip: text; */
+  background-clip: text;
+  font-size: 7vw;
+  font-family: Lato, sans-serif;
+  animation: reveal 3000ms ease-in-out forwards 500ms,
+             glow 1000ms linear infinite 3500ms;
+}
+  @keyframes reveal {
+    80%{
+      letter-spacing: 8px;
+    }
+    100% {
+      background-size: 300% 300%;
+    }
+  }
+  @keyframes glow {
+    40% {
+      text-shadow: 0 0 100px #fff;
+    }
+  }
+
