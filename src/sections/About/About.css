@@ -1,10 +1,9 @@
 #aboutSection {
     height: 100vh;
-    background-color: grey;
+    background-image: linear-gradient(grey, black);
 }
 
 #jumbotronAbout h1{
-    background-color: grey;
     height: 30vh;
     color: whitesmoke;
     font-size: 90px;
@@ -12,17 +11,27 @@
     margin-right: 17%;
 }
 
-#me-photo {
+#about-word {
+    font-family: Merriweather, sans-serif; 
+    font-weight: 900;
+    
+}
+
+h1{
+    text-shadow: grey 2px -2px;
+}
+
+img {
     width: 60%;
     height: auto;
     border: 1px solid #353434;
-    margin-left: 20%;
+    margin-left: 30%;
     margin-bottom: 7%;
     border-radius: 10px;
 }
 
 #me-text{
-    font-family: Roboto;
+    font-family: Merriweather, sans-serif;
     color: lightcyan;
     font-size: 170%;
 }
