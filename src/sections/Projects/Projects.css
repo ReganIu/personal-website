@@ -1,0 +1,15 @@
+#jumbotronProjects{
+    height: 100vh;
+    color: whitesmoke;
+    font-size: 90px;
+    padding: 50px;
+    background-image: linear-gradient(black, grey);
+}
+
+#projectWord{
+    height: 30vh;
+    color: whitesmoke;
+    font-size: 90px;
+    padding: 50px;
+    margin-left: 0;
+}
