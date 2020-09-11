@@ -5,8 +5,14 @@
 }
 
 #projectWord{
-    font-size: 90px;
-    padding: 50px;
+    font-size: 9vmin;
+    padding: 10px;
     font-family: Merriweather, sans-serif; 
     font-weight: 900;
+}
+
+#column{
+    color: black;
+    padding: 10vw 20vw 10vw 20vw;
+
 }
