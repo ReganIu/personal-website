@@ -11,8 +11,28 @@
     font-weight: 900;
 }
 
-#column{
-    color: black;
-    padding: 10vw 20vw 10vw 20vw;
+/* Project Card styling below */
 
+@media (max-width: 600vmin) {
+    #convoPic, #exercisePic, #chatbotPic {
+      display: inline-block;
+      max-width: 10vmin;
+      vertical-align: top;
+    }
+  }
+
+.card-title, .card-text{
+    color: black;
+  }
+
+.fab {
+    font-size: 1vw;
+    width: 3vmin;
+    color: whitesmoke;
+}
+
+.card{
+    background-color: grey;
+    font-family: Lato, sans-serif;
+    margin-top: 10vmin;
 }
