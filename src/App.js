@@ -6,20 +6,32 @@ import About from './sections/About/About';
 import Projects from './sections/Projects/Projects';
 
 
+
 class App extends React.Component {
   render () {
     
     return (
       <div>
         
-        <Router>
-          <Route path="/" exact component={Intro} />
-          <Route path="/" exact component={Navigation} />
-          <Route path="/" exact component={About} />
-          <Route path="/" exact component={Projects} />
+          
+          <Router>
+            <div id="intro"> 
+            <Route path="/" exact component={Intro} ></Route>
+            </div>
+            <Route exact component={Navigation} />
+            <div id="about">
+            <Route path="/" exact component={About} ></Route>
+            </div>
+            <div id="projects">
+            <Route path="/" exact component={Projects} ></Route>
+            </div>
 
 
-        </Router>
+          </Router>
+        
+        <div>
+          
+        </div>
       </div>
     );
   }

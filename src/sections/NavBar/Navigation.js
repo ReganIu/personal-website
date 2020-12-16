@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
+// import { Link } from "react-router-dom";
 import "./Navigation.css"
 
 
@@ -14,10 +15,10 @@ class Navigation extends React.Component {
             
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
-                    <Nav.Link href="#" activeClass="active">Home</Nav.Link>
-                    <Nav.Link href="#about">About</Nav.Link>
-                    <Nav.Link href="#projects">Projects</Nav.Link>
-                    <Nav.Link href="#contact">Contact</Nav.Link>
+                    <Nav.Link  href="/" activeClass="active">Home</Nav.Link>
+                    <Nav.Link  href="/#about">About</Nav.Link>
+                    <Nav.Link  href="/#projects">Projects</Nav.Link>
+                    {/* <Nav.Link to="/contact">Contact</Nav.Link> */}
                 </Nav>
                 <Nav>
                     <a id="linkedin-logo" href="https://www.linkedin.com/in/reganiu/" target ="blank">
