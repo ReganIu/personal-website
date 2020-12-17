@@ -8,12 +8,11 @@
     align-items: center;
     height: 420px; 
      position: absolute;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -500%);
     top: 50%;
     left: 50%;
     color: rgb(187, 187, 187);
     font-weight: 800;
-    font-family: Arial, sans-serif;
     
 }
 
@@ -24,6 +23,7 @@
     -webkit-animation: fadeIn ease 12s;
     animation: fadeIn ease 12s;
     animation-fill-mode: forwards;
+    
 }
 
 @keyframes fadeIn {

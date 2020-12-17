@@ -28,7 +28,11 @@ img {
     color: lightcyan;
     /* font-size: 3.7vmin ; */
     white-space: pre-wrap;
-    font-size: 1.25rem;
-    padding-top: 10vmin;
-  
+    /* font-size: 25%; */
+}
+
+@media only screen and (max-width: 480px)  {
+    h1 {
+        font-size: 18px;
+    }
 }

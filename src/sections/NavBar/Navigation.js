@@ -5,10 +5,32 @@ import "./Navigation.css"
 
 
 class Navigation extends React.Component {
+
+    // constructor method to bind the methods for the sticky Navbar 
+    // constructor (){
+    //     super()
+    //     this.stickyNav = this.stickyNav.bind(this)
+    //     this.stickyScroll = this.stickyScroll.bind(this)
+    // }
+
+    // stickyNav = () => {
+    //     var header = document.getElementById("basic-navbar-nav");
+    //     var sticky = header.offsetTop;
+    //     if (window.pageYOffset > sticky) {
+    //         header.classList.add("sticky");
+    //       } else {
+    //         header.classList.remove("sticky");
+    //       }
+    // }
+
+    // stickyScroll = () => {
+    //     window.onscroll = function() {this.stickyNav()}
+    // }
+
     render () {
         return(
             <div>
-            <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+            <Navbar collapseOnSelect id="navbar" expand="lg" bg="dark" variant="dark">
             <Navbar.Brand href="#Intro">Regan Iu</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             

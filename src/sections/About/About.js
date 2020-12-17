@@ -4,7 +4,7 @@ import './About.css'
 class About extends React.Component {
     render () {
         return (
-            <div id='aboutSection'>
+            <div id='aboutSection' overflow="default">
                 
                 <div className='jumbotron-fluid' id="jumbotronAbout">
                     <h1 id="about-word">About</h1>
