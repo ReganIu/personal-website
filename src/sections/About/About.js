@@ -13,10 +13,10 @@ class About extends React.Component {
                 <div class="container fill-screen-height"> 
                     <div class="row">
                         <div class="col-sm-6">
-                            <img id="me-photo" src={require('../../resources/potraits/me.jpg')} alt='me'/>
+                            <img id="me-photo" src={require('../../resources/portraits/me.jpg')} alt='me'/>
                         </div>
                         <div class="col-sm-6">
-                            <h1 className="about-me" id="me-text">Hi, my name is Regan Iu and I'm currently a 3rd year student at the University of Toronto, where I'm studying a double major in Computational Cognition and Mathematics with a minor in Statistics. I built this website in React to learn more about web development and to show others about the projects that I've created!</h1> 
+                            <h1 className="about-me" id="me-text">Hi, my name is Regan Iu and I'm currently a 3rd year student at the University of Toronto, where I'm majoring in Computational Cognition and double minoring in Mathematics and Statistics. I built this website in React to learn more about web development and to show others about the projects that I've created!</h1> 
                         </div>
                     </div>
                 </div>

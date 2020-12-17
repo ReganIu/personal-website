@@ -1,7 +1,16 @@
 #jumbotronProjects{
-    height: 100vh;
     color: whitesmoke;
     background-image: linear-gradient(black, grey);
+}
+
+/* .jumbotron-fluid .row {
+ 
+  background-color: red;
+}  */
+
+.row {
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 #projectWord{
@@ -13,22 +22,20 @@
 
 /* Project Card styling below */
 
-@media (max-width: 600vmin) {
-    #convoPic, #exercisePic, #chatbotPic {
-      display: inline-block;
-      max-width: 10vmin;
-      vertical-align: top;
-    }
-  }
+#pokePic, #convoPic{
+  max-height: 70vh;
+}
+
+
 
 .card-title, .card-text{
     color: black;
   }
 
-.fab {
-    font-size: 1vw;
-    width: 3vmin;
+.jumbotron-fluid .fab {
+    font-size: 17px;
     color: whitesmoke;
+    width: 20px;
 }
 
 .card{

@@ -1,0 +1,27 @@
+import React from 'react';
+import Navigation from './sections/NavBar/Navigation';
+import Intro from './sections/Intro/Intro';
+import About from './sections/About/About';
+import Projects from './sections/Projects/Projects';
+import './Start.css';
+
+class Start extends React.Component{
+    render(){
+        return(
+            <div>
+                <div id="intro"> 
+                    <Intro/>
+                </div>
+                    <Navigation/>
+                <div id="about">
+                    <About/>
+                </div>
+                <div id="projects">
+                    <Projects/>
+                </div>
+            </div>
+        )
+    }
+}
+
+export default Start;
