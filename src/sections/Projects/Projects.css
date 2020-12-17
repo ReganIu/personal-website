@@ -39,7 +39,7 @@
 }
 
 .card{
-    background-color: grey;
+    background-image: linear-gradient(grey, white);
     font-family: Lato, sans-serif;
     margin-top: 10vmin;
 }

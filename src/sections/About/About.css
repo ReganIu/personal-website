@@ -23,10 +23,11 @@ img {
     border-radius: 10px;
 }
 
-#me-text{
+h3 {
     font-family: Lato, sans-serif;
     color: lightcyan;
-    /* font-size: 3.7vmin ; */
     white-space: pre-wrap;
-    font-size: 2vmax;
+    font-size: 3vh;
+
 }
+
