@@ -15,9 +15,10 @@
 
 #projectWord{
     font-size: 9vmin;
-    padding: 10px;
-    font-family: Merriweather, sans-serif; 
+    padding: 25px;
+    font-family: Lato, sans-serif; 
     font-weight: 900;
+    
 }
 
 /* Project Card styling below */
@@ -25,7 +26,6 @@
 #pokePic, #convoPic{
   max-height: 70vh;
 }
-
 
 
 .card-title, .card-text{

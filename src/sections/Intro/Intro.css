@@ -13,17 +13,17 @@
     left: 50%;
     color: rgb(187, 187, 187);
     font-weight: 800;
+    font-family: Arial, sans-serif;
     
 }
 
 #name {
     font-size: 600%;
     opacity: 0.0;
-    font-family: Roboto;
+    font-family: Arial;
     -webkit-animation: fadeIn ease 12s;
     animation: fadeIn ease 12s;
     animation-fill-mode: forwards;
-    
 }
 
 @keyframes fadeIn {
