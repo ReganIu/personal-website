@@ -48,6 +48,7 @@
   bottom: 0;
   transform: translate(0, 100%);
 }
+/* very first word */
 .animated-title > div.text-top div span:first-child {
   color: #767676;
 }
@@ -61,4 +62,7 @@
   top: 0;
   transform: translate(0, -100%);
   color: black;
+  font-size: 5vw;
+  padding: 2vmin 0;
+  position: absolute;
 }

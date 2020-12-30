@@ -10,12 +10,12 @@ class Intro extends React.Component {
                 <div class="animated-title">
                     <div class="text-top">
                         <div>
-                            <span>hey,</span>
-                            <span>i'm regan</span>
+                            <span>Hey,</span>
+                            <span>I'm Regan!</span>
                         </div>
                     </div>
                     <div class="text-bottom">
-                        <div>check out my website!</div>
+                        <div>check out my website</div>
                     </div>
                 </div>
             </div>
