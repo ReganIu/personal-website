@@ -30,7 +30,7 @@ class Navigation extends React.Component {
     render () {
         return(
             <div>
-            <Navbar collapseOnSelect id="navbar" expand="lg" bg="dark" variant="dark">
+            <Navbar collapseOnSelect id="navbar" expand="lg" bg="light" variant="light">
             <Navbar.Brand href="#Intro">Regan Iu</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             

@@ -1,6 +1,7 @@
 #jumbotronProjects{
     color: whitesmoke;
-    background-image: linear-gradient(black, grey);
+    background-image: linear-gradient(lightgray, white);
+
 }
 
 /* .jumbotron-fluid .row {
@@ -16,8 +17,9 @@
 #projectWord{
     font-size: 9vmin;
     padding: 25px;
-    font-family: Lato, sans-serif; 
+    font-family: Poppins, sans-serif; 
     font-weight: 900;
+    color: black;
     
 }
 
@@ -39,7 +41,7 @@
 }
 
 .card{
-    background-image: linear-gradient(grey, white);
+    background-color: lightgray;
     font-family: Lato, sans-serif;
     margin-top: 10vmin;
 }

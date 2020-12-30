@@ -10,12 +10,11 @@
 }
 #jumbotronIntro {
     height: 100vh;
-    background-color: white;
+    background-color: whitesmoke;
   }
 .animated-title {
   color: black;
   font-family: Lato, sans-serif;
-  font-weight: bolder;
   height: 90vmin;
   left: 50%;
   position: absolute;
@@ -62,7 +61,6 @@
   top: 0;
   transform: translate(0, -100%);
   color: black;
-  font-size: 5vw;
-  padding: 2vmin 0;
-  position: absolute;
+  font-size: 4vw;
+  
 }

@@ -41,7 +41,7 @@ chatbotClick = () => {
                                 <Card.Body>
                                     <Card.Title>Pokemon Card Recognizer</Card.Title>
                                     <Card.Text> A Pokemon Card recognition app to collectible card game hobbyists who would like to get more details on their collection. </Card.Text>
-                                    <Button variant="primary" onClick={this.chatbotClick} style={{fontFamily:'Merriweather', color: 'white', backgroundColor:'black'}}> <i class="fab fa-github"></i> Github </Button>
+                                    <Button variant="primary" onClick={this.chatbotClick} style={{fontFamily:'Lato', color: 'white', backgroundColor:'black'}}> <i class="fab fa-github"></i> Github </Button>
                                 </Card.Body> 
                             </Card>
                         </div>
@@ -54,7 +54,7 @@ chatbotClick = () => {
                                 <Card.Body>
                                     <Card.Title>Conversationalist</Card.Title>
                                     <Card.Text> A text-to-speech Android application that helps users learn and improve their spoken language.</Card.Text>
-                                    <Button variant="primary" onClick={this.conversationalistClick} style={{fontFamily:'Merriweather', color: 'white', backgroundColor:'black'}}> <i class="fab fa-github"></i> Github </Button>
+                                    <Button variant="primary" onClick={this.conversationalistClick} style={{fontFamily:'Lato', color: 'white', backgroundColor:'black'}}> <i class="fab fa-github"></i> Github </Button>
                                 </Card.Body>
                             </Card>
                         </div>
@@ -67,7 +67,7 @@ chatbotClick = () => {
                                 <Card.Body>
                                     <Card.Title>Exercise Tracker</Card.Title>
                                     <Card.Text> A web application built using MongoDB for the database, Express.js and Node.js for the backend, and React for the frontend that keeps track of the users' exercises. </Card.Text>
-                                    <Button variant="primary" onClick={this.exerciseClick} style={{fontFamily:'Merriweather', color: 'white', backgroundColor:'black'}}> <i class="fab fa-github"></i> Github </Button>
+                                    <Button variant="primary" onClick={this.exerciseClick} style={{fontFamily:'Lato', color: 'white', backgroundColor:'black'}}> <i class="fab fa-github"></i> Github </Button>
                                 </Card.Body>
                             </Card>
                         </div>
