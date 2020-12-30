@@ -17,8 +17,8 @@
   radial-gradient(ellipse at bottom, #fff, transparent, transparent);
   /* -webkit-background-clip: text; */
   background-clip: text;
-  font-size: 7vw;
-  font-family: Merriweather, sans-serif;
+  font-size: 6vw;
+  font-family: Poppins, sans-serif;
   animation: reveal 3000ms ease-in-out forwards 500ms,
              glow 1000ms linear infinite 3500ms;
 }
