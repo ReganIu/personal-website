@@ -37,8 +37,9 @@ class Navigation extends React.Component {
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
                     <Nav.Link  href="#intro" activeClass="active">Home</Nav.Link>
-                    <Nav.Link  href="#about" activeClass="active">About</Nav.Link>
-                    <Nav.Link  href="#projects" activeClass="active">Projects</Nav.Link>
+                    <Nav.Link  href="#about" >About</Nav.Link>
+                    <Nav.Link  href="#projects" >Projects</Nav.Link>
+                    <Nav.Link  href="#contact" >Contact</Nav.Link>
                 </Nav>
                 <Nav>
                     <div class="icons">
