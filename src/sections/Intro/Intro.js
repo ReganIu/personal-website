@@ -15,7 +15,7 @@ class Intro extends React.Component {
                         </div>
                     </div>
                     <div class="text-bottom">
-                        <div>Check out my website</div>
+                        <div>Check out my website.</div>
                     </div>
                 </div>
             </div>
