@@ -42,7 +42,7 @@ class Navigation extends React.Component {
                     <Nav.Link  href="#contact" >Contact</Nav.Link>
                 </Nav>
                 <Nav>
-                    <div class="icons" style={{fontSize: '3vw', color: 'gray'}}>
+                    <div class="icons">
                         <a id="linkedin-logo" href="https://www.linkedin.com/in/reganiu/" target ="blank">
                             <i class="fab fa-linkedin"></i>
                         </a>
