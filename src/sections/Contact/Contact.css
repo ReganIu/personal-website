@@ -1,8 +1,35 @@
 #contactSection {
     height: 30vh;
-    padding-top: 3vh;
+    padding-top: 7vh;
+    text-align: center;
 }
+
+/* "Get in contact with me" text */
 h1 {
     text-align: center;
     font-family: Poppins, san-serif;
 }
+
+.icons .row i{
+    font-size: 60px; 
+    color: black;
+    padding-top: 20px;
+}
+
+/* .icons .row #linkedin-logo i{
+    font-size: 60px; 
+    color: black;
+    padding-top: 20px;
+}
+
+.icons .row #github-logo i{
+    font-size: 60px; 
+    color: black;
+    padding-top: 20px;
+}
+
+.icons .row #email-logo i{
+    font-size: 60px; 
+    color: black;
+    padding-top: 20px;
+} */
