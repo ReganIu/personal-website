@@ -8,22 +8,13 @@
     color: black;
 }
 
-#basic-navbar-nav #navSections #home:hover {
+#basic-navbar-nav #navSections .txt:hover {
     background-color: black;
     color: white;
 }
 
-#basic-navbar-nav #navSections #about:hover {
-    background-color: black;
-    color: white;
-}
-
-#basic-navbar-nav #navSections #projects:hover {
-    background-color: black;
-    color: white;
-}
-
-#basic-navbar-nav #navSections #contact:hover {
-    background-color: black;
-    color: white;
+#navbar {
+    position: sticky;
+    top: 0;
+    
 }
