@@ -3,3 +3,27 @@
     color: gray;
     width: 50px;
 }
+
+#basic-navbar-nav .icons i:hover{
+    color: black;
+}
+
+#basic-navbar-nav #navSections #home:hover {
+    background-color: black;
+    color: white;
+}
+
+#basic-navbar-nav #navSections #about:hover {
+    background-color: black;
+    color: white;
+}
+
+#basic-navbar-nav #navSections #projects:hover {
+    background-color: black;
+    color: white;
+}
+
+#basic-navbar-nav #navSections #contact:hover {
+    background-color: black;
+    color: white;
+}

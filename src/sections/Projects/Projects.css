@@ -46,3 +46,9 @@
     font-family: Poppins, sans-serif;
     margin-top: 10vmin;
 }
+
+.jumbotron-fluid .row .col-sm-4 .btn:hover {
+  background-color: gray !important;
+  color: black !important;
+  
+} 

@@ -13,5 +13,9 @@ h1 {
 .icons .row i{
     font-size: 60px; 
     color: black;
-    padding-top: 20px;
+    padding-top: 50px;
+}
+
+.icons .row i:hover{
+    color: gray;
 }

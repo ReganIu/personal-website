@@ -9,23 +9,23 @@ class Navigation extends React.Component {
     // constructor method to bind the methods for the sticky Navbar 
     // constructor (){
     //     super()
-    //     this.stickyNav = this.stickyNav.bind(this)
-    //     this.stickyScroll = this.stickyScroll.bind(this)
+    //     this.myFunction = this.myFunction.bind(this)
     // }
 
-    // stickyNav = () => {
-    //     var header = document.getElementById("basic-navbar-nav");
-    //     var sticky = header.offsetTop;
-    //     if (window.pageYOffset > sticky) {
-    //         header.classList.add("sticky");
-    //       } else {
-    //         header.classList.remove("sticky");
-    //       }
+    // function myFunction () {
+    // window.onscroll = function() {myFunction()};
+
+    // var navbar = document.getElementById("navbar");
+    // var sticky = navbar.offsetTop;
+
+    
+    //     if (window.pageYOffset >= sticky) {
+    //         navbar.classList.add("sticky")
+    //     } else {
+    //         navbar.classList.remove("sticky");
+    //     }
     // }
 
-    // stickyScroll = () => {
-    //     window.onscroll = function() {this.stickyNav()}
-    // }
 
     render () {
         return(
@@ -35,11 +35,11 @@ class Navigation extends React.Component {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             
             <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="mr-auto">
-                    <Nav.Link  href="#intro" activeClass="active">Home</Nav.Link>
-                    <Nav.Link  href="#about" >About</Nav.Link>
-                    <Nav.Link  href="#projects" >Projects</Nav.Link>
-                    <Nav.Link  href="#contact" >Contact</Nav.Link>
+                <Nav id="navSections" className="mr-auto">
+                    <Nav.Link  id = "home" href="#intro" activeClass="active">Home</Nav.Link>
+                    <Nav.Link  id = "about" href="#about" >About</Nav.Link>
+                    <Nav.Link  id = "projects" href="#projects" >Projects</Nav.Link>
+                    <Nav.Link  id = "contact" href="#contact" >Contact</Nav.Link>
                 </Nav>
                 <Nav>
                     <div class="icons">
