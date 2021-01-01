@@ -5,7 +5,7 @@ import Pdf from "../../resources/ReganIuResume.pdf"
 class Contact extends React.Component {
     render() {
         return (
-            <div id="contactSection">
+            <div id="contactSection" class="container">
                 <h1> Get in contact with me! </h1>
                 <div class="icons">
                         <div class="row">
@@ -31,6 +31,8 @@ class Contact extends React.Component {
                             </div>
                         </div>
                     </div>
+                    <hr class="black-line"></hr>
+                    <p style={{backgroundColor: "white", marginBottom: "0px", textAlign: "center", fontFamily: "Poppins"}}>made by Regan Iu © 2020</p>
             </div>
         )
     }

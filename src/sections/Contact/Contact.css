@@ -1,7 +1,8 @@
 #contactSection {
-    height: 30vh;
+    height: 30vmax;
     padding-top: 7vh;
     text-align: center;
+    max-height: 70vh ;
 }
 
 /* "Get in contact with me" text */
@@ -18,4 +19,9 @@ h1 {
 
 .icons .row i:hover{
     color: gray;
+}
+
+.black-line{
+    background-color: black;
+    /* width: 100vmin; */
 }
