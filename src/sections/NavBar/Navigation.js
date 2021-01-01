@@ -13,7 +13,7 @@ class Navigation extends React.Component {
     render () {
         return(
             <div>
-            <Navbar collapseOnSelect id="navbar" expand="lg" bg="light" variant="light">
+            <Navbar collapseOnSelect id="navbar" expand="lg" bg="light" variant="light" fixed="top">
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             
             <Navbar.Collapse id="basic-navbar-nav">
