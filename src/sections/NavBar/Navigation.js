@@ -7,14 +7,11 @@ import "./Navigation.css"
 
 class Navigation extends React.Component {
 
-    // constructor method to bind the methods for the sticky Navbar 
-
 
     render () {
         return(
             <div>
-            <Navbar collapseOnSelect id="navbar" expand="lg" bg="light" variant="light" sticky="top">
-            {/* <Navbar style={{backgroundColor: "white", position: "sticky"}} variant="light"> */}
+            <Navbar collapseOnSelect id="navbar" expand="lg" bg="light" variant="light" fixed="top">
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             
             <Navbar.Collapse id="basic-navbar-nav">
