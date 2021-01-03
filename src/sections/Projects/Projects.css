@@ -11,11 +11,11 @@
 
 #projectWord{
     font-size: 9vmin;
-    padding: 25px;
     font-family: Poppins, sans-serif; 
     font-weight: 900;
     color: black;
     text-align: center;
+    padding-top: 13vh;
     
 }
 

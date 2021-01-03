@@ -7,10 +7,10 @@
 
 /* 'About' word styling */
 #jumbotronAbout h1{
-    height: 17vh;
+    height: 17px;
     color: black;
     font-size: 9vmin;
-    padding: 35px;
+    padding: 13vh;
     font-family: Poppins, sans-serif; 
     font-weight: 900;
     text-align: center;

@@ -8,7 +8,7 @@ class Contact extends React.Component {
             <div id="contactSection" class="container">
                 <h1> Get in contact with me! </h1>
                 <div class="icons">
-                        <div class="row">
+                        <div class="row flex-nowrap">
                             <div class="col-sm-3">
                                 <a id="resume-logo" href={Pdf} target = "blank">
                                     <i class="fas fa-file-alt"></i>

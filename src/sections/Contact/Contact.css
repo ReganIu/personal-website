@@ -8,10 +8,12 @@
 h1 {
     text-align: center;
     font-family: Poppins, san-serif;
+    font-size: 7vmin;
 }
 
 .icons .row i{
-    font-size: 60px; 
+    /* font-size: 60px;  */
+    font-size: 4vmax;
     color: black;
     padding-top: 50px;
 }
