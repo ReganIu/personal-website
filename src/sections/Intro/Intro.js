@@ -1,5 +1,5 @@
 import React from 'react';
-import "./IntroAnimated2.css"
+import "./IntroAnimated.css"
 
 class Intro extends React.Component {
     render() {
