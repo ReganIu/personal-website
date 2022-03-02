@@ -1,21 +1,25 @@
+#contact {
+    background-image: linear-gradient(#6C757D, #ADB5BD);
+}
 #contactSection {
     height: 30vh;
     padding-top: 7vh;
     text-align: center;
+    color: white;
 }
 
 /* "Get in contact with me" text */
 h1 {
     text-align: center;
     font-family: Poppins, san-serif;
-    font-size: 7vmin;
+    font-size: 4vmin;
 }
 
 .icons .row i{
-    /* font-size: 60px;  */
-    font-size: 4vmax;
-    color: black;
+    font-size: 40px; 
+    color: white;
     padding-top: 50px;
+    text-align: center;
 }
 
 .icons .row i:hover{
@@ -23,5 +27,5 @@ h1 {
 }
 
 .black-line{
-    background-color: black;
+    background-color: #495057;
 }
