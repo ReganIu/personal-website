@@ -1,8 +1,6 @@
 #aboutSection {
     height: 100vh;
-    background-image: linear-gradient(white, lightgray);
-
-    
+    background-image: linear-gradient(white, lightgray);  
 }
 
 /* 'About' word styling */
@@ -16,10 +14,12 @@
     text-align: center;
 }
 
+#me-photo {
+    border-radius: 200px;
+}
 
 img {
     width: 60%;
-    border: 1px solid #353434;
     margin-left: 18%;
     margin-bottom: 10%;
     border-radius: 10px;
