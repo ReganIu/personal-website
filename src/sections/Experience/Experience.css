@@ -1,0 +1,26 @@
+#jumbotronExp{
+    color: rgb(0, 0, 0);
+    background-image: linear-gradient(lightgray, white);
+}
+
+.row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+#wattpadPic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0%;
+    width: 50%;
+}
+
+#expWord{
+    font-size: 9vmin;
+    font-family: Poppins, sans-serif; 
+    font-weight: 900;
+    color: black;
+    text-align: center;
+    padding-top: 13vh;
+}

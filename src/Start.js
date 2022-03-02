@@ -4,6 +4,7 @@ import Intro from './sections/Intro/Intro';
 import About from './sections/About/About';
 import Projects from './sections/Projects/Projects';
 import Contact from './sections/Contact/Contact';
+import Experience from './sections/Experience/Experience';
 import './Start.css';
 
 class Start extends React.Component{
@@ -16,6 +17,9 @@ class Start extends React.Component{
                     <Navigation/>
                 <div id="about">
                     <About/>
+                </div>
+                <div id="experience">
+                    <Experience/>
                 </div>
                 <div id="projects">
                     <Projects/>
