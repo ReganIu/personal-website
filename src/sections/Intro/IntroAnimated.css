@@ -10,10 +10,8 @@
 }
 #jumbotronIntro {
     height: 100vh;
-    /* background-color: rgb(33, 37, 41); */
   }
 .animated-title {
-  /* color: white; */
   font-family: Lato, sans-serif;
   height: 90vmin;
   left: 50%;
@@ -47,10 +45,7 @@
   bottom: 0;
   transform: translate(0, 100%);
 }
-/* very first word */
-.animated-title > div.text-top div span:first-child {
-  /* color: white; */
-}
+
 .animated-title > div.text-bottom {
   bottom: 0;
 }
@@ -60,7 +55,6 @@
   animation-fill-mode: forwards;
   top: 0;
   transform: translate(0, -100%);
-  /* color: white; */
   font-size: 4vw;
   
 }
