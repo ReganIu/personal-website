@@ -1,12 +1,12 @@
 #aboutSection {
     height: 100vh;
-    background-image: linear-gradient(#212529, #343A40)
+    /* background-image: linear-gradient(#212529, #343A40) */
 }
 
 /* 'About' word styling */
 #jumbotronAbout h1{
     height: 17px;
-    color: white;
+    /* color: white; */
     font-size: 9vmin;
     padding: 13vh;
     font-family: Poppins, sans-serif; 
@@ -27,7 +27,7 @@ img {
 
 h3 {
     font-family: Poppins, sans-serif;
-    color: white;
+    /* color: white; */
     white-space: pre-wrap;
     font-size: 2.7vh;
 

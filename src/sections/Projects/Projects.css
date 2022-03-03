@@ -1,5 +1,5 @@
 #jumbotronProjects{
-    background-image: linear-gradient(#495057, #6C757D);
+    /* background-image: linear-gradient(#495057, #6C757D); */
 }
 
 .row {
@@ -11,7 +11,7 @@
     font-size: 9vmin;
     font-family: Poppins, sans-serif; 
     font-weight: 900;
-    color: white;
+    /* color: white; */
     text-align: center;
     padding-top: 13vh;
     
@@ -25,17 +25,17 @@
 
 
 .card-title, .card-text{
-    color: white;
+    color: black;
   }
 
 .jumbotron-fluid .fab {
     font-size: 17px;
-    color: whitesmoke;
+    /* color: whitesmoke; */
     width: 20px;
 }
 
 .card{
-    background-color: #343A40;
+    background-color: #6C757D;
     font-family: Poppins, sans-serif;
     margin-top: 10vmin;
 }

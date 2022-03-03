@@ -16,7 +16,7 @@ class Experience extends React.Component {
                         <div class="col-sm-4">
                             <Card>
                                 <img id="wattpadPic"  src={require('../../resources/Wattpad-Logo.png')} alt="wattpad-logo"/>
-                                <Card.Header style={{fontFamily:'Lato', textAlign: 'center', fontSize: '5vh', color: 'white'}}>Wattpad</Card.Header>
+                                <Card.Header style={{fontFamily:'Lato', textAlign: 'center', fontSize: '5vh', color: 'black'}}>Wattpad</Card.Header>
                                 <Card.Body>
                                     <Card.Subtitle className="mb-2 text-muted">Associate Engineer</Card.Subtitle>
                                     <Card.Text>

@@ -1,11 +1,11 @@
 #contact {
-    background-image: linear-gradient(#6C757D, #ADB5BD);
+    /* background-image: linear-gradient(#6C757D, #ADB5BD); */
 }
 #contactSection {
     height: 30vh;
     padding-top: 7vh;
     text-align: center;
-    color: white;
+    /* color: white; */
 }
 
 /* "Get in contact with me" text */
@@ -17,7 +17,7 @@ h1 {
 
 .icons .row i{
     font-size: 40px; 
-    color: white;
+    color: #495057;
     padding-top: 50px;
     text-align: center;
 }
