@@ -16,15 +16,15 @@ class Experience extends React.Component {
                         <div class="col-sm-4">
                             <Card>
                                 <img id="wattpadPic"  src={require('../../resources/Wattpad-Logo.png')} alt="wattpad-logo"/>
-                                <Card.Header style={{fontFamily:'Lato', textAlign: 'center', fontSize: '5vh', color: 'black'}}>Wattpad</Card.Header>
+                                <Card.Header style={{ textAlign: 'center', fontSize: '5vh' }}>Wattpad</Card.Header>
+                                <Card.Header>Associate Engineer</Card.Header>
                                 <Card.Body>
-                                    <Card.Subtitle className="mb-2 text-muted">Associate Engineer</Card.Subtitle>
-                                    <Card.Text>
+                                    <Card.Subtitle style={{ paddingBottom: '10px' }}>
                                         • Creator Journey | May 2021 - Dec 2021
-                                    </Card.Text>
-                                    <Card.Text>
+                                    </Card.Subtitle>
+                                    <Card.Subtitle>
                                         • Core Experience | Jan 2022 - Present
-                                    </Card.Text>
+                                    </Card.Subtitle>
                                 </Card.Body> 
                             </Card>
                         </div>

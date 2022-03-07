@@ -19,9 +19,14 @@
 }
 
 
-.card-title, .card-text{
-    color: black;
-  }
+.card-header{
+  font-size: 3vh;
+  text-align: center;
+}
+
+.card-subtitle{
+  padding-bottom: 10px;
+}
 
 .jumbotron-fluid .fab {
     font-size: 17px;

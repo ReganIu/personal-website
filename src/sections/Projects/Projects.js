@@ -38,9 +38,9 @@ chatbotClick = () => {
                         <div class="col-sm-4">
                             <Card>
                                 <img id="pokePic" variant="top" src={require('../../resources/projectpics/pokerec.png')} alt=""/>
+                                <Card.Header>Pokemon Card Recognizer</Card.Header>
                                 <Card.Body>
-                                    <Card.Title>Pokemon Card Recognizer</Card.Title>
-                                    <Card.Text> A Pokemon Card recognition app to collectible card game hobbyists who would like to get more details on their collection. </Card.Text>
+                                    <Card.Subtitle> A Pokemon Card recognition app to collectible card game hobbyists who would like to get more details on their collection. </Card.Subtitle>
                                     <Button className="btn" variant="primary" onClick={this.chatbotClick} style={{fontFamily:'Lato', color: 'white', backgroundColor:'black'}}> <i class="fab fa-github"></i> Github </Button>
                                 </Card.Body> 
                             </Card>
@@ -51,9 +51,9 @@ chatbotClick = () => {
                         <div class="col-sm-4">
                             <Card>
                                 <img id="convoPic" variant="top" src={require('../../resources/projectpics/conversationalist.jpg')} alt=""/>
+                                <Card.Header>Conversationalist</Card.Header>
                                 <Card.Body>
-                                    <Card.Title>Conversationalist</Card.Title>
-                                    <Card.Text> A text-to-speech Android application that helps users learn and improve their spoken language.</Card.Text>
+                                    <Card.Subtitle> A text-to-speech Android application that helps users learn and improve their spoken language.</Card.Subtitle>
                                     <Button className="btn" variant="primary" onClick={this.conversationalistClick} style={{fontFamily:'Lato', color: 'white', backgroundColor:'black'}}> <i class="fab fa-github"></i> Github </Button>
                                 </Card.Body>
                             </Card>
@@ -64,9 +64,9 @@ chatbotClick = () => {
                         <div class="col-sm-4">
                             <Card>
                                 <img id="exercisePic" variant="top" src={require('../../resources/projectpics/exercisetracker.png')} alt="" />
+                                <Card.Header>Exercise Tracker</Card.Header>
                                 <Card.Body>
-                                    <Card.Title>Exercise Tracker</Card.Title>
-                                    <Card.Text> A web application built using MongoDB for the database, Express.js and Node.js for the backend, and React for the frontend that keeps track of the users' exercises. </Card.Text>
+                                    <Card.Subtitle> A web application built using MERN stack that keeps track of the users' exercises. </Card.Subtitle>
                                     <Button className="btn" variant="primary" onClick={this.exerciseClick} style={{fontFamily:'Lato', color: 'white', backgroundColor:'black'}}> <i class="fab fa-github"></i> Github </Button>
                                 </Card.Body>
                             </Card>
