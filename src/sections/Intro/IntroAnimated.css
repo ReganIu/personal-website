@@ -12,7 +12,7 @@
     height: 100vh;
   }
 .animated-title {
-  font-family: Lato, sans-serif;
+  font-family: Poppins, sans-serif;
   height: 90vmin;
   left: 50%;
   position: absolute;
@@ -55,6 +55,6 @@
   animation-fill-mode: forwards;
   top: 0;
   transform: translate(0, -100%);
-  font-size: 4vw;
+  font-size: 3vw;
   
 }
