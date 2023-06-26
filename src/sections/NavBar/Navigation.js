@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import Pdf from "../../resources/ReganIuResume.pdf"
+import Pdf from "../../resources/ReganIuMay2023.pdf"
 import "./Navigation.css"
 
 
