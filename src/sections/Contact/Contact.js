@@ -1,6 +1,6 @@
 import React from 'react'
 import './Contact.css'
-import Pdf from "../../resources/ReganIuResume.pdf"
+import Pdf from "../../resources/ReganIuMay2023.pdf"
 
 class Contact extends React.Component {
     render() {
