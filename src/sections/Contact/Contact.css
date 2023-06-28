@@ -1,8 +1,12 @@
 #contactSection {
     height: 30vh;
+    max-width: none !important;
     padding-top: 7vh;
     text-align: center;
+}
 
+#contactSection.container { 
+    background-image: linear-gradient( #212529, #000000)
 }
 
 /* "Get in contact with me" text */
@@ -20,7 +24,7 @@ h1 {
 }
 
 .icons .row i:hover{
-    color: gray;
+    color: white;
 }
 
 .black-line{
