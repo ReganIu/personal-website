@@ -16,8 +16,8 @@ class About extends React.Component {
                             <img id="me-photo" src={require('../../resources/portraits/me with tie.jpg')} alt='me'/>
                         </div>
                         <div class="col-sm-6" id="aboutMe">
-                            <h3 className="about-me" id="me-text">Hi, my name is Regan Iu and I'm a student at the University of Toronto. I'm currently an intern at Wattpad. I built this website in React, Bootstrap, and Firebase to learn more about web development and to show others about the projects that I've created!</h3> 
-                        </div>
+                            <h3 className="about-me" id="me-text">Hey, I'm Regan Iu and I'm a recent graduate from the University of Toronto. I'm a passionate about creating engaging and user-friendly experiences. I strive to continuously learn and grow in this ever-evolving field, and I'm excited to collaborate on exciting projects. Scroll down to learn more about my experience and the projects that I've created!</h3> 
+                            </div>
                     </div>
                 </div>
             </div>         
