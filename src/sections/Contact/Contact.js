@@ -32,7 +32,7 @@ class Contact extends React.Component {
                         </div>
                     </div>
                     <hr class="black-line"></hr>
-                    <p style={{marginBottom: "0px", textAlign: "center", fontFamily: "Poppins"}}>made by Regan Iu © 2022</p>
+                    <p style={{marginBottom: "0px", textAlign: "center", fontFamily: "Poppins"}}>made by Regan Iu © 2023</p>
             </div>
         )
     }
