@@ -13,7 +13,7 @@ class About extends React.Component {
                 <div class="container fill-screen-height"> 
                     <div class="row">
                         <div class="col-sm-6">
-                            <img id="me-photo" src={require('../../resources/portraits/me with tie.jpg')} alt='me'/>
+                            <img id="me-photo" src={require('../../resources/portraits/me.JPG')} alt='me'/>
                         </div>
                         <div class="col-sm-6" id="aboutMe">
                             <h3 className="about-me" id="me-text">Hey, I'm Regan Iu and I'm a recent graduate from the University of Toronto. I'm a passionate about creating engaging and user-friendly experiences. I strive to continuously learn and grow in this ever-evolving field, and I'm excited to collaborate on exciting projects. Scroll down to learn more about my experience and the projects that I've created!</h3> 

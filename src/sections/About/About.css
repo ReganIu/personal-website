@@ -1,12 +1,11 @@
 #aboutSection {
     height: 100vh;
-    /* background-image: linear-gradient(#212529, #343A40) */
+    /* background-image: linear-gradient(#212529, #1971c9) */
 }
 
 /* 'About' word styling */
 #jumbotronAbout h1{
     height: 17px;
-    /* color: white; */
     font-size: 9vmin;
     padding: 13vh;
     font-family: Poppins, sans-serif; 
@@ -14,20 +13,15 @@
     text-align: center;
 }
 
-#me-photo {
-    border-radius: 200px;
-}
-
 img {
     width: 60%;
-    margin-left: 18%;
+    margin-left: 20%;
     margin-bottom: 10%;
     border-radius: 10px;
 }
 
 h3 {
     font-family: Poppins, sans-serif;
-    /* color: white; */
     white-space: pre-wrap;
     font-size: 2.7vh;
 
