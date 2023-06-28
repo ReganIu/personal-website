@@ -28,10 +28,10 @@ function Start() {
             <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
                 <GlobalStyles />
                     <StyledApp>
-                        <Switch 
+                        {/* <Switch 
                             isOn={value}
                             handleToggle={() => themeToggler()}
-                        />
+                        /> */}
                          
             <div id="intro"> 
                 <Intro/>
