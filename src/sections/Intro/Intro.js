@@ -5,64 +5,62 @@ import { motion } from "framer-motion/dist/framer-motion";
 
 class Intro extends React.Component {
     state = {
-        isClicked: false,
+        isPoppedOut: false,
       };
     
-      handleClick = () => {
-        this.setState((prevState) => ({
-          isClicked: !prevState.isClicked,
-        }));
-      };
+    componentDidMount() {
+        setInterval(this.togglePopout, 1500);
+    }
+
+    togglePopout = () => {
+    this.setState((prevState) => ({
+        isPoppedOut: !prevState.isPoppedOut,
+    }))
+    }
+
     render() {    
+        const { isPoppedOut } = this.state;
+        
         const nameVariants = {
             hidden: {
-                opacity: 0,
-              },
-          visible: {
-            opacity: 1,
-            transition: {
-                duration: 5,
-                delay: 0.8,
-                staggerChildren: 0.3,
+                rotateY: 0,
+                x: "0%",
+                scale: 1,
+                color: "white",
+                textShadow: "none",
             },
-          },
+            poppedOut: {
+                textShadow: "-2px 2px 2px rgba(12, 242, 225, 1)",
+                rotateY: 0,
+                x: "10%",
+                rotateX: 20,
+                scale: 1.2,
+                color: "rgba(255, 254, 123, 1)",
+                transition: {
+                    duration: 0.5,
+                },
+            },
         };
 
-        const letterVariants = {
-            hidden: {
-              opacity: 0,
-            },
-            visible: {
-              opacity: 1,
-            },
-          };
-
-        const name = "I'm Regan!";
-
+        const name = "Regan!";
 
         return (    
             <div className="jumbotron-fluid " id="jumbotronIntro">
                 <div class="animated-title">
                     <div class="text-top">
                         <div>
-                            <span> Hey, </span>
-                            <motion.h1
+                            <span> Hey, I'm </span>
+
+                            <motion.span
+                            id="rname"
                             className="intro-name"
                             variants={nameVariants}
                             initial="hidden"
-                            animate="visible"
-                            
+                            animate={isPoppedOut ? "poppedOut" : "hidden"}
                             >
-                            {name.split("").map((letter, index) => (
-                            <motion.span
-                            key={index}
-                            variants={letterVariants}
-                            style={{ display: "inline", fontSize: "12vmin" }}
-                            >
-                                {letter}
+                            {name}
                             </motion.span>
-                            ))}
-                            </motion.h1>
+
                         </div>
                     </div>
                     <div class="text-bottom">
