@@ -1,14 +1,14 @@
 #basic-navbar-nav .icons i {
     font-size: 30px;
-    color: gray;
+    color: white;
     width: 50px;
 }
 
 #basic-navbar-nav .icons i:hover{
-    color: black;
+    color: rgb(121, 121, 121);
 }
 
 #basic-navbar-nav #navSections .txt:hover {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
 }
