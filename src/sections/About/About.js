@@ -1,13 +1,57 @@
 import React from 'react'
 import './About.css'
+import { motion, animate } from "framer-motion"
 
 class About extends React.Component {
+    constructor(props) {
+        super(props);
+        this.sectionRef = React.createRef();
+      }
+    
+      componentDidMount() {
+        const options = {
+          root: null,
+          rootMargin: "0px",
+          threshold: 1, // Adjust this value based on when you want the animation to start
+        };
+    
+        this.observer = new IntersectionObserver(this.handleIntersection, options);
+        this.observer.observe(this.sectionRef.current);
+      }
+    
+      componentWillUnmount() {
+        if (this.observer) {
+          this.observer.disconnect();
+        }
+      }
+    
+      handleIntersection = (entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            this.animateIn();
+            observer.unobserve(entry.target);
+          }
+        });
+      };
+    
+      animateIn = () => {
+        animate(this.sectionRef.current, { opacity: 1, x: 0 }, { duration: 1 });
+      };
+
     render () {
         return (
             <div id='aboutSection' overflow="default">
                 
-                <div className='jumbotron-fluid' id="jumbotronAbout">
-                    <h1 id="about-word">About</h1>
+                <div className='jumbotron-fluid' id="jumbotronAbout" ref={this.sectionRef}>
+                    {/* TODO: need to make it always animate */}
+                        <motion.h1
+                            id="about-word"
+                            initial={{ opacity: 0, x: 100 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 1 }}
+                        >
+                            About
+                        </motion.h1>
                 </div>
 
                 <div class="container fill-screen-height"> 
