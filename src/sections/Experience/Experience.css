@@ -2,6 +2,16 @@
     background-color: #1971c9
 }
 
+#expWord {
+    background-image: linear-gradient(250deg, rgb(251, 255, 0), rgb(25, 184, 10));
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+
 .row {
     margin-left: 0px;
     margin-right: 0px;

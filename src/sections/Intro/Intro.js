@@ -48,7 +48,7 @@ class Intro extends React.Component {
                 <div class="animated-title">
                     <div class="text-top">
                         <div>
-                            <span> Hey, I'm </span>
+                            <span id="hname"> Hey, I'm </span>
 
                             <motion.span
                             id="rname"
