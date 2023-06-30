@@ -1,6 +1,6 @@
 import React from 'react';
 import "./IntroAnimated.css";
-import { motion } from "framer-motion/dist/framer-motion"; 
+import { motion } from "framer-motion"; 
 
 
 class Intro extends React.Component {
