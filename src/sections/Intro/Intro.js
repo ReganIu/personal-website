@@ -26,16 +26,15 @@ class Intro extends React.Component {
                 rotateY: 0,
                 x: "0%",
                 scale: 1,
-                color: "white",
-                textShadow: "none",
+                color: "rgba(256, 256, 256)"
             },
             poppedOut: {
-                textShadow: "-2px 2px 2px rgba(12, 242, 225, 1)",
+                textShadow: "-2px 2px 2px rgba(12, 242, 225)",
                 rotateY: 0,
                 x: "10%",
                 rotateX: 20,
                 scale: 1.2,
-                color: "rgba(255, 254, 123, 1)",
+                color: "rgba(255, 254, 123)",
                 transition: {
                     duration: 0.5,
                 },
