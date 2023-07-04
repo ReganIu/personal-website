@@ -2,6 +2,7 @@ import React from 'react';
 import './Projects.css'
 import Button from "react-bootstrap/Button"
 import Card from "react-bootstrap/Card"
+import { motion } from 'framer-motion';
 
 class Projects extends React.Component {
 
@@ -11,6 +12,9 @@ class Projects extends React.Component {
         this.conversationalistClick = this.conversationalistClick.bind(this)
         this.exerciseClick = this.exerciseClick.bind(this)
         this.chatbotClick = this.chatbotClick.bind(this)
+        this.state = {
+            isFaded: true
+        };
     }
 
 conversationalistClick = () => {
@@ -25,12 +29,44 @@ chatbotClick = () => {
     window.open('https://github.com/ReganIu/Simple-Chatbot')
 }
 
+    componentDidMount() {
+        setInterval(() => {
+            this.setState((prevState) => ({
+                isFaded: !prevState.isFaded
+            }));
+        }, 1200);
+    }
+
 
     render(){
+        const { isFaded } = this.state;
+        const popVariants = {
+            hidden: { 
+                opacity: 0.1, 
+                scale: 0.9,
+            },
+      
+            fading: {
+                opacity: 1, 
+                scale: 1,
+                transition: {
+                    duration: 0.5,
+                },
+            },
+        };
         return (
             <div>
                 <div className='jumbotron-fluid' id="jumbotronProjects">
-                    <h1 id="projectWord">Projects</h1>
+                    <motion.h1 
+                    id="projectWord"
+                    variants={popVariants}
+                    // initial={{ opacity: 0, scale: 0.5 }}
+                    animate={ isFaded ? "Fading" : "hidden" }
+                    // whileHover="fading"
+                    whileTap="fading"
+                    >
+                        Projects
+                    </motion.h1>
                     
                     <div className="row">
 
