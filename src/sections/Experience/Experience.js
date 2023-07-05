@@ -1,15 +1,52 @@
 import React from 'react';
 import './Experience.css'
 import Card from "react-bootstrap/Card"
+import { motion } from 'framer-motion';
 
 class Experience extends React.Component {
-
+    constructor(props) {
+        super(props);
+        this.state = {
+            isShaking: true
+        };
+      }
+    
+      componentDidMount() {
+        setInterval(() => {
+            this.setState((prevState) => ({
+                isShaking: !prevState.isShaking
+            }));
+        }, 1000);
+      }
 
     render(){
+        const { isShaking } = this.state;
+        const shakeVariants = {
+            hidden: { 
+              y: 0,
+            },
+      
+            shaking: {
+              rotateY: 35,
+              // rotateY: 50,
+              y: [-5, 15, -5, 15, 0],
+              transition: {
+                  duration: 0.5,
+              },
+            },
+          };
         return (
             <div>
                 <div className='jumbotron-fluid' id="jumbotronExp">
-                    <h1 id="expWord">Experience</h1>
+                    <motion.h1 
+                    id="expWord"
+                    variants={shakeVariants}
+                    animate={ isShaking ? "shaking" : "hidden" }
+                    // whileHover="shaking"
+                    whileTap="shaking"
+                    >
+                        Experience
+                    </motion.h1>
                     
                     <div class="row">
                         <div class="col-sm-4"></div>
