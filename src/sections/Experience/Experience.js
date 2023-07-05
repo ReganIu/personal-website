@@ -27,7 +27,7 @@ class Experience extends React.Component {
             },
       
             shaking: {
-              rotateY: 35,
+              rotateX: 35,
               // rotateY: 50,
               y: [-5, 15, -5, 15, 0],
               transition: {
