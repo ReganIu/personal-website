@@ -23,18 +23,14 @@ class Experience extends React.Component {
         const { isShaking } = this.state;
         const shakeVariants = {
             hidden: { 
-              y: 0,
+                // opacity: 0, 
+                // scale: 0.5,
             },
-      
             shaking: {
-              rotateX: 35,
-              // rotateY: 50,
-              y: [-5, 15, -5, 15, 0],
-              transition: {
-                  duration: 0.5,
-              },
+                rotateY: 35,
             },
-          };
+        };
+
         return (
             <div>
                 <div className='jumbotron-fluid' id="jumbotronExp">
@@ -42,8 +38,11 @@ class Experience extends React.Component {
                     id="expWord"
                     variants={shakeVariants}
                     animate={ isShaking ? "shaking" : "hidden" }
-                    // whileHover="shaking"
-                    whileTap="shaking"
+                    initial={{ opacity: 0, scale: 0.1 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    transition={{
+                        duration: 0.7,
+                    }}
                     >
                         Experience
                     </motion.h1>
