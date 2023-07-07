@@ -1,26 +1,21 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './Experience.css'
-import Card from "react-bootstrap/Card"
+import { Card } from 'react-bootstrap';
 import { motion } from 'framer-motion';
 
-class Experience extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            isShaking: true
-        };
-      }
+const Experience = (props) => {
+    const [isShaking, setIsShaking] = useState(true);
     
-      componentDidMount() {
-        setInterval(() => {
-            this.setState((prevState) => ({
-                isShaking: !prevState.isShaking
-            }));
+    useEffect(() => {
+        const intervalId = setInterval(() => {
+            setIsShaking(prevState => !prevState);
         }, 1000);
-      }
 
-    render(){
-        const { isShaking } = this.state;
+            return () => {
+                clearInterval(intervalId);
+            };
+        }, []);
+
         const shakeVariants = {
             hidden: { 
                 // opacity: 0, 
@@ -70,7 +65,6 @@ class Experience extends React.Component {
                 </div>
             </div>      
         )
-    }
 }
 
 export default Experience
