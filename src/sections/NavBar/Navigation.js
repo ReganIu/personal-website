@@ -27,21 +27,24 @@ const Navigation = () => {
             className="menu"
             >
                 <motion.button
-                    whileTap={{ scale: 0.97 }}
+                    whileTap={{ scale: 0.57 }}
                     onClick={() => setIsOpen(!isOpen)}
                 >
-                    Menu
+                    {/* Menu */}
                     <motion.div
                     variants={{
-                        open: { rotate: 180 },
+                        open: { rotate: 20 },
                         closed: { rotate: 0 }
                     }}
                     transition={{ duration: 0.2 }}
                     style={{ originY: 0.55 }}
                     >
-                    <svg width="15" height="15" viewBox="0 0 20 20">
+                    {/* <svg width="15" height="15" viewBox="0 0 20 20">
                         <path d="M0 7 L 20 7 L 10 16" />
-                    </svg>
+                    </svg> */}
+                        <span></span>
+                        <span></span>
+                        <span></span>
                     </motion.div>
                 </motion.button>
                 <motion.ul
