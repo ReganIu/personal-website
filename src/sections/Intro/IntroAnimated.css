@@ -15,7 +15,9 @@
   display: inline;
 }
 
+/* hey i'm part */
 #hname {
+  font-weight: bold;
   background-image: linear-gradient(250deg, red, orange);
   background-size: 100%;
   background-clip: text;
@@ -27,6 +29,18 @@
 
 /* "Regan!" part */
 #rname {
+  font-weight: bold;
+}
+
+/* check out part */
+#cname {
+  background-image: linear-gradient(150deg, #5a79c8, #aee4ed);
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
   font-weight: bold;
 }
 

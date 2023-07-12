@@ -119,7 +119,7 @@ const Intro = () => {
             </div>
           </div>
           <div className="text-bottom">
-            <div>Check out my website.</div>
+            <div id="cname">Check out my website.</div>
           </div>
         </div>
       </div>
