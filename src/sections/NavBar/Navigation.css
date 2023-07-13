@@ -87,7 +87,8 @@ body {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    background-image: linear-gradient(0deg, #09203f, #537895);
+    background-image: linear-gradient(270deg, #aee4ed, #537895);
+    font-weight: 600;
   }
   
   li {
