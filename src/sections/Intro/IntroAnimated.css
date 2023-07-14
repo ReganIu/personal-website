@@ -46,7 +46,7 @@
 
 #jumbotronIntro {
     height: 100vh;
-    background-image: linear-gradient(#000000,#212529)
+    background-image: linear-gradient(#305479,#212529)
   }
 .animated-title {
   font-family: Poppins, sans-serif;
@@ -72,7 +72,7 @@
   display: block;
 }
 .animated-title > div.text-top {
-  border-bottom: 1vmin solid #767676;
+  border-bottom: 0.5vmin solid #ffffff;
   top: 0;
 }
 .animated-title > div.text-top div {
