@@ -88,7 +88,7 @@ class About extends React.Component {
                             }
                           }}
                           >
-                            Hey, I'm Regan Iu and I'm a recent graduate from the University of Toronto. I'm a passionate about creating engaging and user-friendly experiences. I strive to continuously learn and grow in this ever-evolving field, and I'm excited to collaborate on exciting projects. Scroll down to learn more about my experience and the projects that I've created!
+                            Hey, I'm Regan Iu and I'm a recent graduate from the University of Toronto. I'm passionate about creating engaging and user-friendly experiences. I strive to continuously learn and grow in this ever-evolving field, and I'm excited to collaborate on exciting projects. Scroll down to learn more about my experiences and the projects that I've created!
                           </motion.h3> 
                           </div>
                   </div>
