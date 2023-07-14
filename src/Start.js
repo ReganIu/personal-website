@@ -14,7 +14,7 @@ const StyledApp = styled.div`
   color: ${(props) => props.theme.fontColor};
 `;
 
-function Start() {
+const Start = () => {
     const [theme, setTheme] = useState("dark");
     const [value, setValue] = useState(false);
     const themeToggler = () => {
