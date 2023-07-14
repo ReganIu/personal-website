@@ -4,9 +4,8 @@ import Start from './Start';
 
 
 
-class App extends React.Component {
-  render () {
-    
+const App = () => {
+  
     return (
       <div>
         <Router>
@@ -14,7 +13,6 @@ class App extends React.Component {
         </Router>
       </div>
     );
-  }
 }
 
 export default App;
