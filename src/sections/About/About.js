@@ -46,7 +46,7 @@ const About = () => {
   const [[page, direction], setPage] = useState([0, 0]);
   const images = [
     meImg,
-    // pokeImg
+    meImg
   ];
   const imageIndex = wrap(0, images.length, page);
 
