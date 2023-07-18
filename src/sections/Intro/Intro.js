@@ -1,8 +1,9 @@
-import React, { useState, useEffect, useRef, useLayoutEffect } from 'react';
+import React, { useState, useEffect, useRef, useLayoutEffect, Suspense } from 'react';
 import "./IntroAnimated.css";
 import { motion, useTransform, useScroll, useTime } from "framer-motion"; 
 import { Canvas, useThree, useFrame } from "@react-three/fiber";
 import { degreesToRadians, progress, mix } from "popmotion";
+// import { Cloud } from "@react-three/drei"
 
 
 
@@ -151,6 +152,14 @@ const Intro = () => {
         </>
       );
   }
+
+  // function Rig() {
+  //   const { scrollYProgress } = useScroll();
+  //   const camera = useThree((state) => state.camera)
+  //   return useFrame((state) => {
+  //     camera.position.y = Math.sin(state.clock.elapsedTime) * 1.2
+  //   })
+  // }
   
     return (
       <div className="jumbotron-fluid " id="jumbotronIntro">
@@ -158,9 +167,15 @@ const Intro = () => {
             <Scene />
         </Canvas>
 
-        <Canvas >
-            <Scene2 />
-        </Canvas>
+        {/* <Canvas camera={{ position: [0, 0, 16], fov: 75 }}>
+          <ambientLight intensity={0.8} />
+          <Suspense fallback={null}>
+            <Cloud position={[-4, 0, -25]} speed={0.2} opacity={0.25} />
+            <Cloud position={[4, -2, -5]} speed={0.2} opacity={0.25} />
+            <Cloud position={[-4, 2, 0]} speed={0.2} opacity={0.25} />
+          </Suspense>
+          <Rig />
+        </Canvas> */}
 
         {/* <Canvas >
             <Scene />
