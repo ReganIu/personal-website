@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import './About.css'
-import { motion } from "framer-motion"
+import { motion, AnimatePresence } from "framer-motion"
+import { wrap } from "popmotion";
+import meImg from "../../resources/portraits/me.JPG";
+import pokeImg from "../../resources/projectpics/pokerec.png"
 
 const About = () => {
     
@@ -13,7 +16,44 @@ const About = () => {
 
     return () => clearInterval(intervalId);
   }, []);
-    
+
+  const variants = {
+    enter: (direction) => {
+      return {
+        x: direction > 0 ? 1000 : -1000,
+        opacity: 0
+      };
+    },
+    center: {
+      zIndex: 1,
+      x: 0,
+      opacity: 1
+    },
+    exit: (direction) => {
+      return {
+        zIndex: 0,
+        x: direction < 0 ? 1000 : -1000,
+        opacity: 0
+      };
+    }
+  };
+  
+  const swipeConfidenceThreshold = 10000;
+  const swipePower = (offset, velocity) => {
+    return Math.abs(offset) * velocity;
+  };
+
+  const [[page, direction], setPage] = useState([0, 0]);
+  const images = [
+    meImg,
+    // pokeImg
+  ];
+  const imageIndex = wrap(0, images.length, page);
+
+  const paginate = (newDirection) => {
+    setPage([page + newDirection, newDirection]);
+  };
+
     const shakeVariants = {
       hidden: { 
         y: 0,
@@ -47,22 +87,52 @@ const About = () => {
             <div class="container fill-screen-height"> 
                 <div class="row">
                     <div class="col-sm-6">
+                      <AnimatePresence initial={false} custom={direction}>
                         <motion.img 
                         id="me-photo" 
-                        src={require('../../resources/portraits/me.JPG')} 
-                        alt='me'
-                        initial={{ opacity: 0, scale: 0.7 }}
-                        whileInView={{ opacity: 1, scale: 1 }}
+                        key={page}
+                        src={images[imageIndex]}
+                        custom={direction}
+                        variants={variants}
+                        initial="enter"
+                        animate="center"
+                        // exit="exit"
                         transition={{
-                          duration: 2,
-                          scale: {
-                            type: "spring",
-                            damping: 10,
-                            stiffness: 100,
-                            restDelta: 0.001
+                          x: { type: "spring", stiffness: 300, damping: 30 },
+                          opacity: { duration: 0.2 }
+                        }}
+                        drag="x"
+                        dragConstraints={{ left: 0, right: 0 }}
+                        dragElastic={1}
+                        onDragEnd={(e, { offset, velocity }) => {
+                          const swipe = swipePower(offset.x, velocity.x);
+
+                          if (swipe < -swipeConfidenceThreshold) {
+                            paginate(1);
+                          } else if (swipe > swipeConfidenceThreshold) {
+                            paginate(-1);
                           }
                         }}
+                        alt='me'
+                        // initial={{ opacity: 0, scale: 0.7 }}
+                        // whileInView={{ opacity: 1, scale: 1 }}
+                        // transition={{
+                        //   duration: 2,
+                        //   scale: {
+                        //     type: "spring",
+                        //     damping: 10,
+                        //     stiffness: 100,
+                        //     restDelta: 0.001
+                        //   }
+                        // }}
                         />
+                      </AnimatePresence>
+                        <div className="next" onClick={() => paginate(1)}>
+                          {"‣"}
+                        </div>
+                        <div className="prev" onClick={() => paginate(-1)}>
+                          {"‣"}
+                        </div>
                     </div>
                     <div class="col-sm-6" id="aboutMe">
                         <motion.h3 
@@ -84,8 +154,8 @@ const About = () => {
                         <motion.h3 
                         className="about-me" 
                         id="me-text"
-                        initial={{ opacity: 0, y: 0 }}
-                        whileInView={{ opacity: 1, y: 1 }}
+                        initial={{ opacity: 0, y: -100 }}
+                        whileInView={{ opacity: 1, y: 0 }}
                         transition={{
                           duration: 2,
                           scale: {
