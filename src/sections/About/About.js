@@ -30,7 +30,6 @@ class About extends React.Component {
       shaking: {
         rotateY: 35,
         // rotateY: 50,
-        y: [-5, 15, -5, 15, 0],
         transition: {
             duration: 0.5,
         },
@@ -46,7 +45,7 @@ class About extends React.Component {
                           variants={shakeVariants}
                           // animate={ isShaking ? "shaking" : "hidden" }
                           animate={{ rotateY: 30 }}
-                          transition={{ repeat: Infinity, repeatType: "mirror", repeatDelay: 0.3 }}
+                          transition={{ repeat: Infinity, repeatType: "reverse", repeatDelay: 0.3 }}
 
                       >
                           About
@@ -88,7 +87,23 @@ class About extends React.Component {
                             }
                           }}
                           >
-                            Hey, I'm Regan Iu and I'm a recent graduate from the University of Toronto. I'm passionate about creating engaging and user-friendly experiences. I strive to continuously learn and grow in this ever-evolving field, and I'm excited to collaborate on exciting projects. Scroll down to learn more about my experiences and the projects that I've created!
+                            Hey, I'm Regan Iu and I'm a recent graduate from the University of Toronto. I'm passionate about creating engaging and user-friendly experiences.
+                          </motion.h3> 
+                          <motion.h3 
+                          className="about-me" 
+                          id="me-text"
+                          initial={{ opacity: 0, y: 0 }}
+                          whileInView={{ opacity: 1, y: 1 }}
+                          transition={{
+                            duration: 2,
+                            scale: {
+                              type: "spring",
+                              damping: 5,
+                              stiffness: 100,
+                            }
+                          }}
+                          >
+                            I strive to continuously learn and grow in this ever-evolving field, and I'm excited to collaborate on exciting projects. Scroll down to learn more about my experiences and the projects that I've created!
                           </motion.h3> 
                           </div>
                   </div>
